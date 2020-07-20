@@ -1,10 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
 
 body {
     padding: 0;
@@ -14,7 +17,8 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
+
 }
 
 body.correct {
@@ -75,11 +79,11 @@ body.wrong {
 }
 
 .btn.correct {
-    color: rgb(2, 223, 2);
+    color: rgb(1, 255, 115)
 }
 
 .btn.wrong {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 8, 0);
 }
 
 .btn,
@@ -88,6 +92,12 @@ body.wrong {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+}
+
+/* Start & Next Button Styling */
+.start-btn,
+.next-btn {
+    box-shadow: #2084ff50 0 10px 30px 5px !important;
 }
 
 .controls {
@@ -100,65 +110,136 @@ body.wrong {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-/* Background Styles Only */
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-
-html {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DFDFDF;
-}
-
-.side-links {
+.credit {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    right: 41%;
+    top: 85%;
+    display: block;
 }
 
-.side-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-    color: white;
-    width: 180px;
-    padding: 10px 0;
-    border-radius: 10px;
+.credit p {
+    text-align: center;
 }
 
-.side-link-youtube {
-    background-color: red;
+
+/* Responsive & Media Queries */
+
+@media screen and (max-width:768px) {
+    .welcome-message p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    #question-container {
+        width: 480px;
+    }
+
+    #question {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+
+    .btn-grid {
+        margin-bottom: 30px;
+    }
+
+    .credit {
+        position: absolute;
+        right: 35%;
+        top: 85%;
+        display: block;
+    }
 }
 
-.side-link-twitter {
-    background-color: #1DA1F2;
+@media screen and (min-width:768px) {
+    .welcome-message p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    #question-container {
+        width: 480px;
+    }
+
+    #question {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+
+    .btn-grid {
+        margin-bottom: 30px;
+    }
+
+    .credit {
+        position: absolute;
+        right: 33%;
+        top: 85%;
+        display: block;
+    }
 }
 
-.side-link-github {
-    background-color: #6e5494;
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+        max-height: 50%;
+    }
+
+    .welcome-message h1 {
+        font-size: 1rem;
+    }
+
+    .welcome-message p {
+        font-size: 15px;
+        margin: 20px 0;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    #question-container {
+        width: 300px;
+    }
+
+    #question {
+        font-size: 1rem;
+    }
+
+    .credit {
+        position: absolute;
+        right: 25%;
+        top: 82%;
+    }
 }
 
-.side-link-text {
-    margin-left: 10px;
-    font-size: 18px;
-}
 
-.side-link-icon {
-    color: white;
-    font-size: 30px;
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+    .welcome-message h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .welcome-message p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .credit {
+        right: 40%;
+    }
 }
