@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+body.correct {
+    background-color: rgb(167, 255, 207);
+}
+
+body.wrong {
+    background-color: rgb(255, 189, 189);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    height: 60%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.103) 0 0 40px 5px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+#question {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+
+    background-color: #2083ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    color: rgb(2, 223, 2);
+}
+
+.btn.wrong {
+    color: rgb(255, 0, 0);
+}
+
+.btn,
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+}
+
+.side-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.side-link-youtube {
+    background-color: red;
+}
+
+.side-link-twitter {
+    background-color: #1DA1F2;
+}
+
+.side-link-github {
+    background-color: #6e5494;
+}
+
+.side-link-text {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.side-link-icon {
+    color: white;
+    font-size: 30px;
+}

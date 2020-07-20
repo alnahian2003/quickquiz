@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Responsive Quiz Web Application">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Al Nahian">
+    <meta name="url" content="https://alnahian.xyz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet Source -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz App | Al Nahian</title>
+
+</head>
+
+<body>
+    <!-- Default unchecked -->
+    <div class="container">
+        <div class="centered">
+            <div class="welcome-message">
+                <h1>Howdy! Welcome.</h1>
+                <p>Click "Start" and feel free to answer the questions</p>
+            </div>
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="credit">
+        <p style="text-align: center;    position: absolute;
+    right: 40%;
+    top: 85%;
+    display: block;
+    text-align: center;">Made With <span style="color: red;">♥</span> By <a
+                style="text-decoration: none;; font-weight: bold; color: black; " target="_blank"
+                href="https://facebook.com/alnahian2003">Al Nahian</a> </p>
+    </div>
+    <!-- Main JavaScript Source -->
+    <script src="app.js"></script>
+    </script>
+</body>
+
+</html>
